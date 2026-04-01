@@ -14,6 +14,7 @@ export const navigation: NavGroup[] = [
     items: [
       { title: "Overview", href: "/docs/overview" },
       { title: "Authentication", href: "/docs/authentication" },
+      { title: "Get API Keys", href: "/docs/get-api-keys" },
       { title: "WebSocket Connection", href: "/docs/websocket-connection" },
     ],
   },
