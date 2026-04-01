@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #FAFAFA;
+  --bg-card: #FFFFFF;
+  --bg-code: #1E1E2E;
+  --text: #1A1A1A;
+  --text-muted: #6B7280;
+  --text-code: #E2E8F0;
+  --accent-rust: #B7410E;
+  --accent-orange: #E85D04;
+  --accent-warm: #F48C06;
+  --border: #E5E7EB;
+  --border-accent: #B7410E33;
+  --surface-accent: #B7410E0A;
+  --accent-green: #059669;
+  --surface-green: #05966915;
+  --gradient-rust: linear-gradient(135deg, #B7410E 0%, #E85D04 50%, #F48C06 100%);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-bg: var(--bg);
+  --color-bg-card: var(--bg-card);
+  --color-bg-code: var(--bg-code);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-code: var(--text-code);
+  --color-accent-rust: var(--accent-rust);
+  --color-accent-orange: var(--accent-orange);
+  --color-accent-warm: var(--accent-warm);
+  --color-border: var(--border);
+  --color-border-accent: var(--border-accent);
+  --color-surface-accent: var(--surface-accent);
+  --color-accent-green: var(--accent-green);
+  --color-surface-green: var(--surface-green);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+code, pre, kbd {
+  font-family: var(--font-mono), ui-monospace, monospace;
 }
